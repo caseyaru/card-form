@@ -8,7 +8,14 @@
 </head>
 <body>
     <div class="block">
-        <div class="card card__front"></div>
+        <div class="card card__front">
+            <input type="text" class="card__number" placeholder="XXXX XXXX XXXX XXXX" onkeypress="return isNumeric(event)" maxlength="16">
+            <div class="card__valid">
+                <p class="card__thrue">valid thru</p>
+                <input type="text" class="card__date" placeholder="MM/YY" id="date" onkeypress="return isNumeric(event)" maxlength="4">
+            </div>
+            <input type="text" class="card__name" placeholder="YOUR NAME">
+        </div>
         <div class="card card__back"></div>
     </div>
 </body>

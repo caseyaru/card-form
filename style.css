@@ -14,18 +14,72 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card {
     width: 25rem;
     height: 15rem;
-    background-color: red;
+    border-radius: 5%;
+    box-shadow: 5px 6px 7px #DDA0DD;
 }
 
 .card__front {
+    background-image: linear-gradient(#DA70D6, #57d9ba);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card__number {
+    background-color: white;
+    width: calc(100% - 40px);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.card__valid {
+    margin-top: 10px;
+    max-width: 120px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 100px;
+}
+
+.card__thrue {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card__date {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+
+.card__name {
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255, 0.7);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 40px);
 }
 
 .card__back {
     margin-left: 200px;
+    background-color: #D3D3D3;
 }
